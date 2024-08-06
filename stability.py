@@ -197,7 +197,6 @@ if __name__ == "__main__":
     labels = my_model.unsupervised_learning(Level4_dataset)
     mean_score, std_score, n_runs = my_model.stability_analysis_kmeans(Level4_dataset, n_clusters_range=(3, 10), n_runs=10)
 
-    # Print the results
     print(f"Mean Stability Score: {mean_score}")
     print(f"Standard Deviation of Stability Scores: {std_score}")
     print(f"Number of Runs: {n_runs}")
